@@ -4,6 +4,7 @@ University of St Andrews, MSc Health Data Science, Master's Thesis.
 This thesis applies a 3D state-space segmentation model (SegMamba) to the multi-centre FedBCa bladder MRI dataset to study generalisation across hospitals. 
 Code here reproduces preprocessing, training, inference, metrics, grid search utilities, and plotting used for the experiments.
 
+
 **1. Directory layout (top level, short explanations)**
 
 * FedBCa_prep/ — helper assets for dataset organisation and preparation.
@@ -24,12 +25,16 @@ Code here reproduces preprocessing, training, inference, metrics, grid search ut
 * plot_metrics.py — plot learning curves and performance distributions.
 * make_failure_atlas.py — collect and render failure examples.
 
+
 **2. Dataset**
+
 Scientific Data paper: https://www.nature.com/articles/s41597-024-03971-0 
 Zenodo record: https://zenodo.org/records/10409145 (see record for latest version) 
 Zenodo
 
+
 **3. Environment (minimal)**
+
 Library Version
 numpy 2.2.4
 pandas 2.3.0
@@ -40,13 +45,19 @@ matplotlib 3.10.1
 medpy 0.5.2
 torch 2.7.1+cu126
 
+
 **4. Releases**
+
 Pre-release “Experiments” contains trained weights, logs, and result artifacts for a subset of runs (e.g., Centre-1/2 internal+external, pooled, grid/test). Other  runs weren’t uploaded due to file-size limits; ask if you need a specific artifact. 
 
+
 **5. Contact**
+
 br61@st-andrews.ac.uk
 
+
 **6. Acknowledgements**
+
 Thanks to Dr David Harris-Birtill for supervision.
 Thanks to Xing et al. for the SegMamba Repo.
 Thanks to Cao et al. for the FedBCa dataset.
