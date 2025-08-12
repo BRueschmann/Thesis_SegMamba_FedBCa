@@ -6,23 +6,23 @@ Code here reproduces preprocessing, training, inference, metrics, grid search ut
 
 **1. Directory layout (top level, short explanations)**
 
-FedBCa_prep/ — helper assets for dataset organisation and preparation.
-mamba/ — selective state-space backbone components (vendored for reproducibility).
-model_segmamba/ — SegMamba 3D segmentation model implementation.
-monai/ — minimal MONAI utilities used by the pipeline (vendored).
-causal-conv1d/ — 1-D causal convolution kernel/ops required by Mamba stack.
-light_training/ — lightweight training utilities used by scripts.
-slurm_scripts/ — optional Slurm launcher helpers for multi-GPU runs.
-SegMamba_original_README.md — upstream SegMamba README kept for reference.
-0_inference.py — simple end-to-end inference runner for a single volume/folder.
-2_bladder_preprocessing_mri.py — preprocessing (crop/ROI, resample, normalise) for FedBCa.
-3_bladder_train.py — training entry point (DDP/AMP supported when GPUs are visible).
-4_bladder_predict.py — sliding-window inference with overlap and mirroring.
-5_bladder_compute_metrics.py — compute Dice and HD95 per case/centre and write CSVs.
-grid_runner.py — launch hyperparameter/grid experiments.
-evaluate_grid.py — aggregate/compare runs (e.g., paired tests) and summarise results.
-plot_metrics.py — plot learning curves and performance distributions.
-make_failure_atlas.py — collect and render failure examples.
+* FedBCa_prep/ — helper assets for dataset organisation and preparation.
+* mamba/ — selective state-space backbone components (vendored for reproducibility).
+* model_segmamba/ — SegMamba 3D segmentation model implementation.
+* monai/ — minimal MONAI utilities used by the pipeline (vendored).
+* causal-conv1d/ — 1- causal convolution kernel/ops required by Mamba stack.
+* light_training/ — lightweight training utilities used by scripts.
+* slurm_scripts/ — Slurm launcher helpers for all conducted experiments.
+* SegMamba_original_README.md — upstream SegMamba README kept for reference.
+* 0_inference.py — simple end-to-end inference runner for a single volume/folder.
+* 2_bladder_preprocessing_mri.py — preprocessing (crop/ROI, resample, normalise) for FedBCa.
+* 3_bladder_train.py — training entry point (DDP/AMP supported when GPUs are visible).
+* 4_bladder_predict.py — sliding-window inference with overlap and mirroring.
+* 5_bladder_compute_metrics.py — compute Dice and HD95 per case/centre and write CSVs.
+* grid_runner.py — launch hyperparameter/grid experiments.
+* evaluate_grid.py — aggregate/compare runs (e.g., paired tests) and summarise results.
+* plot_metrics.py — plot learning curves and performance distributions.
+* make_failure_atlas.py — collect and render failure examples.
 
 **2. Dataset**
 Scientific Data paper: https://www.nature.com/articles/s41597-024-03971-0 
