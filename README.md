@@ -28,22 +28,22 @@ Code here reproduces preprocessing, training, inference, metrics, grid search ut
 
 **2. Dataset**
 
-Scientific Data paper: https://www.nature.com/articles/s41597-024-03971-0 
-Zenodo record: https://zenodo.org/records/10409145 (see record for latest version) 
-Zenodo
+* Paper: https://www.nature.com/articles/s41597-024-03971-0 
+* Zenodo record: https://zenodo.org/records/10409145
 
 
 **3. Environment (minimal)**
 
 Library Version
-numpy 2.2.4
-pandas 2.3.0
-SimpleITK 2.5.2
-scikit-image 0.25.2
-scikit-learn 1.6.1
-matplotlib 3.10.1
-medpy 0.5.2
-torch 2.7.1+cu126
+
+* numpy 2.2.4
+* pandas 2.3.0
+* SimpleITK 2.5.2
+* scikit-image 0.25.2
+* scikit-learn 1.6.1
+* matplotlib 3.10.1
+* medpy 0.5.2
+* torch 2.7.1+cu126
 
 
 **4. Releases**
@@ -58,6 +58,6 @@ br61@st-andrews.ac.uk
 
 **6. Acknowledgements**
 
-Thanks to Dr David Harris-Birtill for supervision.
-Thanks to Xing et al. for the SegMamba Repo.
-Thanks to Cao et al. for the FedBCa dataset.
+* Thank you to Dr David Harris-Birtill for supervision.
+* Thank you to Xing et al. for the SegMamba Repo.
+* Thank you to Cao et al. for the FedBCa dataset.
